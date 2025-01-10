@@ -11,3 +11,7 @@ def calcular_promedio_semanal():
     print(f"El promedio semanal de temperatura es: {promedio:.2f}°C") #Se imprime el promedio semanal
 
 calcular_promedio_semanal()#Se llama a la funcion para ejecutarla
+
+
+
+print ("todo va bien")
