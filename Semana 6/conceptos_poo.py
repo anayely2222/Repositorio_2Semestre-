@@ -4,7 +4,7 @@ class animal: #Es el padre de las clases
         self.nombre =nombre
         self.sonido= sonido
     def identidad(self):
-        return f"El animal es un {self.nombre}"
+        return f"se identifica como {self.nombre}"
     def identificacion(self):
         return f"Al animal se lo identifica con su sonido {self.sonido}"
     
@@ -13,7 +13,7 @@ class perro(animal):#Herencia
         super().__init__(nombre, sonido)
         self.raza= raza
     def obtener_raza(self):# Polimorfismo
-        return f"El perro tiene su  raza {self.raza}"
+        return f" su  raza es {self.raza}"
     def imprimir_raza(self):
         return f"Imprime la raza {self.raza}"
     def hacer_sonido(self):
@@ -33,7 +33,7 @@ class gato(animal):
         return "¡Miau!"  
     
 #objeto animal ,padre
-mi_clase_padre = animal("Perro" , "guau")
+mi_clase_padre = animal(" " , " ")
 
 #objeto perro
 mi_clase_perro= perro("Toby", "Guau", "Pastor Alemán")
@@ -42,5 +42,5 @@ mi_clase_perro= perro("Toby", "Guau", "Pastor Alemán")
 mi_clase_gato= gato("Michu", "Miau", "café")
 
 
-print(f"El animal es un perro y su nombre es {mi_clase_perro.identidad()} de raza {mi_clase_perro.obtener_raza()} y dice: {mi_clase_perro.hacer_sonido()}")
-print(f"El animal es un gato y su nombre es {mi_clase_gato.identidad()} de color {mi_clase_gato.obtener_color()} y dice: {mi_clase_gato.hacer_sonido()}")
+print(f"El animal es un perro {mi_clase_perro.identidad()} {mi_clase_perro.obtener_raza()} y dice: {mi_clase_perro.hacer_sonido()}")
+print(f"El animal es un gato {mi_clase_gato.identidad()} de color {mi_clase_gato.obtener_color()} y dice: {mi_clase_gato.hacer_sonido()}")
