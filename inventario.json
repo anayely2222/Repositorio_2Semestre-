@@ -1,0 +1,14 @@
+[
+    {
+        "ID": "23e",
+        "Nombre": "zapato",
+        "Cantidad": 32,
+        "Precio": 12.0
+    },
+    {
+        "ID": "4d",
+        "Nombre": "Blusa",
+        "Cantidad": 43,
+        "Precio": 5.0
+    }
+]
